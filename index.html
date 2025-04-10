@@ -6,39 +6,43 @@
     <link rel="stylesheet" href="src/style.css" />
     <title>AI Quote Generator</title>
   </head>
+
   <body>
-    <h1>Quote Generator</h1>
+    <div id="container">
+      <h1>AI Quote Generator</h1>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of the quote.."
-          required
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        “Eliminate all doubt and replace it with the full expectation that you
-        will receive what you are asking for.” – Rhonda Byrne <br />
-        “We become what we think about. Energy flows where attention goes.” –
-        Rhonda Byrne
-      </div>
-    </main>
+      <main>
+        <form>
+          <input
+            type="text"
+            placeholder="Enter the topic of the quote.."
+            required
+            class="input-quote"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="quote">
+          “Eliminate all doubt and replace it with the full expectation that you
+          will receive what you are asking for.” – Rhonda Byrne <br />
+          “We become what we think about. Energy flows where attention goes.” –
+          Rhonda Byrne
+        </div>
+      </main>
 
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/SibongileT88">Sibongile Tsopo</a> and is
-      <a
-        href="https://github.com/SibongileT88/AI-Quote-Generator"
-        target="_blank"
-        >open-sourced on GitHib</a
-      >
-      and
-      <a href="https://ai-quote-generatorst.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >
-    </footer>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/SibongileT88">Sibongile Tsopo</a> and is
+        <a
+          href="https://github.com/SibongileT88/AI-Quote-Generator"
+          target="_blank"
+          >open-sourced on GitHib</a
+        >
+        and
+        <a href="https://ai-quote-generatorst.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >
+      </footer>
+    </div>
     <script src="src/index.js"></script>
   </body>
 </html>
