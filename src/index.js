@@ -22,7 +22,7 @@ function generateQuote(event) {
 
   poemHiddenElement.classList.remove("hidden");
 
-  poemHiddenElement.innerHTML = `⏳ Please wait, generating the quote about ${instructionsInput.value}`;
+  poemHiddenElement.innerHTML = `⏳ Please wait while I generate a quote about ${instructionsInput.value}...`;
 
   console.log("Quote is being generated");
   console.log(`Prompt:${prompt}`);
