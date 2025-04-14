@@ -18,6 +18,12 @@ function generateQuote(event) {
     " You are an AI assistant with extensive knowledge about quotes related to different topics. Please generate your answer in a short quote along with the person who coined the quote. Make sure to follow the below user instructions";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let poemHiddenElement = document.querySelector("#quote");
+
+  poemHiddenElement.classList.remove("hidden");
+
+  poemHiddenElement.innerHTML = `⏳ Please wait, generating the quote about ${instructionsInput.value}`;
+
   console.log("Quote is being generated");
   console.log(`Prompt:${prompt}`);
   console.log(`Context:${context}`);

@@ -15,17 +15,20 @@
       <h1>AI Quote Generator</h1>
 
       <main>
-        <form id="quote-generator">
-          <input
-            type="text"
-            placeholder="Enter the topic of the quote.."
-            required
-            class="input-quote"
-            id="instructions"
-          />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="quote" id="quote"></div>
+        <div class="form-wrapper">
+          <form id="quote-generator">
+            <input
+              type="text"
+              placeholder="Enter the topic of the quote.."
+              required
+              class="input-quote"
+              id="instructions"
+            />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">e.g. Love, Manifesting, or Exercise etc...</div>
+        </div>
+        <div class="quote hidden" id="quote"></div>
       </main>
 
       <footer>
