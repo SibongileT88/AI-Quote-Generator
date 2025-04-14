@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
+
     <title>AI Quote Generator</title>
   </head>
 
@@ -12,7 +14,7 @@
       <h1>AI Quote Generator</h1>
 
       <main>
-        <form>
+        <form id="quote-generator">
           <input
             type="text"
             placeholder="Enter the topic of the quote.."
@@ -21,12 +23,7 @@
           />
           <input type="submit" class="submit-button" />
         </form>
-        <div class="quote">
-          “Eliminate all doubt and replace it with the full expectation that you
-          will receive what you are asking for.” – Rhonda Byrne <br />
-          “We become what we think about. Energy flows where attention goes.” –
-          Rhonda Byrne
-        </div>
+        <div class="quote" id="quote"></div>
       </main>
 
       <footer>
